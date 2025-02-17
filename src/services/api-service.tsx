@@ -387,6 +387,7 @@ export const useAuth = () => {
 export const useProfile = () => {
     return {
         getProfile: () => apiService.getProfile(),
+        getReviews: () => apiService.getReviews(),
         updateProfile: (profileData: any) => apiService.updateVendorProfile(profileData),
         updateInformation: (vendorData: any) => apiService.updateVendorInformation(vendorData),
         updateProfileImage: (imageFile: File) => apiService.updateVendorProfileImage(imageFile),
